@@ -1,0 +1,31 @@
+.form{
+    background: grey;
+    padding: 50px;
+    margin: 50px;
+    margin-top: 50px;
+}
+
+/* properties for floating labels */
+.input-group label{
+    position: absolute;
+    top:50%;
+    left: 12px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.7s;
+
+}
+
+.input-group input{
+    background:transparent;
+    outline:none;
+}
+
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label{
+    z-index: 10;
+    top:25px;
+    font-size: 12px;
+    background: white;
+}
